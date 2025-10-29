@@ -389,7 +389,24 @@
       gap: 1rem;
       gap: var(--space-md);
     }
-    
+
+    /* Fallback for Safari 14.0 and iOS 14.0-14.4 (no flex gap support) */
+    @supports not (gap: 1rem) {
+      .site-header-inner {
+        margin-left: -0.5rem;
+        margin-right: -0.5rem;
+      }
+      .site-header-inner > * {
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+      }
+    }
+
+    /* Prevent overflow on narrow viewports with long text */
+    .site-header-inner > * {
+      min-width: 0;
+    }
+
     .brand {
       font-size: 1.125rem;
       font-size: var(--font-size-lg);
@@ -675,7 +692,19 @@
       margin-top: 1.5rem;
       margin-top: var(--space-lg);
     }
-    
+
+    /* Fallback for Safari 14.0 and iOS 14.0-14.4 (no flex gap support) */
+    @supports not (gap: 1rem) {
+      .btn-group {
+        margin-left: -0.75rem;
+        margin-left: calc(var(--space-sm) * -1);
+      }
+      .btn-group > * {
+        margin-left: 0.75rem;
+        margin-left: var(--space-sm);
+      }
+    }
+
     /* ================================================================
        STATS GRID
        ================================================================ */
