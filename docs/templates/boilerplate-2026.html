@@ -1,0 +1,1254 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  
+  <!-- Privacy & Security -->
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta http-equiv="Permissions-Policy" content="geolocation=(), microphone=(), camera=()">
+  <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline'; img-src 'self' data:; object-src 'none'; base-uri 'self'; form-action 'self'">
+  <meta name="privacy-commitment" content="No tracking cookies or behavioral analytics load without consent.">
+
+  <!-- Content Provenance & Integrity -->
+  <meta name="creator" content="ABC Translations Content Team">
+  <meta name="reviewed-by" content="Human Reviewer: Compliance Lead">
+  <meta name="content-origin" content="Human-authored with AI drafting assistance, human-edited for accuracy">
+  <meta name="last-reviewed" content="2025-10-29">
+  <meta name="content-scope" content="United States, English audience">
+
+  <!-- SEO Fundamentals - Legal-Safe Language -->
+  <title>Professional Translation Services Built for Real People | ABC Translations</title>
+  <meta name="description" content="Accessible, honest translation services with transparent pricing. Designed for WCAG 2.2 AA. Works on any device, no hidden fees.">
+  <link rel="canonical" href="https://abctranslations.com/">
+
+  <!-- Search Engine Directives -->
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  
+  <!-- Social Media - Complete & Accessible -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Professional Translation Services Built for Real People">
+  <meta property="og:description" content="Accessible, honest translation services with transparent pricing and fast turnaround.">
+  <meta property="og:url" content="https://abctranslations.com/">
+  <meta property="og:image" content="https://abctranslations.com/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Two people reviewing a clear, plain-language service quote on a mobile phone">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:site_name" content="ABC Translations">
+  
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Professional Translation Services Built for Real People">
+  <meta name="twitter:description" content="Accessible, honest translation services with transparent pricing and fast turnaround.">
+  <meta name="twitter:image" content="https://abctranslations.com/twitter-image.jpg">
+  <meta name="twitter:image:alt" content="Two people reviewing a clear, plain-language service quote on a mobile phone">
+  <meta name="twitter:site" content="@abctranslations">
+  
+  <!-- PWA & Mobile - Differentiated Theming -->
+  <meta name="theme-color" content="#0f172a" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#1e293b" media="(prefers-color-scheme: dark)">
+
+  <!-- Icons - Create these files for production:
+       - /favicon.ico (32x32 for legacy browsers)
+       - /favicon.svg (vector logo, scales to any size)
+       - /apple-touch-icon.png (180x180 for iOS)
+       - /site.webmanifest (PWA configuration) -->
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  
+  <style>
+    /* ================================================================
+       DESIGN TOKENS - Mobile First, Legacy-Hardened
+       ================================================================ */
+    :root {
+      /* Colors - WCAG AA+ Compliant */
+      --color-bg: #ffffff;
+      --color-surface: #f9fafb;
+      --color-text: #0f172a;
+      --color-text-muted: #475569;
+      --color-accent: #0f172a;
+      --color-accent-text: #ffffff;
+      --color-border: #e2e8f0;
+      --color-focus: #2563eb;
+      --color-error: #dc2626;
+      --color-success: #059669;
+      
+      /* Spacing Scale - 8pt Grid */
+      --space-2xs: 0.25rem;
+      --space-xs: 0.5rem;
+      --space-sm: 0.75rem;
+      --space-md: 1rem;
+      --space-lg: 1.5rem;
+      --space-xl: 2rem;
+      --space-2xl: 3rem;
+      --space-3xl: 4rem;
+      
+      /* Typography */
+      --font-size-xs: 0.75rem;
+      --font-size-sm: 0.875rem;
+      --font-size-base: 1rem;
+      --font-size-lg: 1.125rem;
+      --font-size-xl: 1.5rem;
+      --font-size-2xl: 2rem;
+      
+      /* Layout */
+      --max-width: 72rem;
+      --readable-width: 65ch;
+      --radius: 0.5rem;
+      --min-touch-target: 44px;
+      
+      /* Transitions */
+      --transition-fast: 150ms ease-out;
+      --transition-base: 250ms ease-out;
+    }
+    
+    @media (min-width: 40rem) {
+      :root {
+        --font-size-xl: 1.75rem;
+        --font-size-2xl: 2.5rem;
+      }
+    }
+    
+    /* Dark Mode */
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --color-bg: #0f172a;
+        --color-surface: #1e293b;
+        --color-text: #f8fafc;
+        --color-text-muted: #94a3b8;
+        --color-accent: #f8fafc;
+        --color-accent-text: #0f172a;
+        --color-border: #334155;
+        --color-focus: #93c5fd;
+      }
+    }
+    
+    /* Reduced Motion */
+    @media (prefers-reduced-motion: reduce) {
+      *,
+      *::before,
+      *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+      }
+    }
+
+    /* High Contrast / Forced Colors Mode - Windows High Contrast, etc. */
+    @media (forced-colors: active) {
+      * {
+        forced-color-adjust: auto;
+      }
+
+      /* Ensure buttons and inputs have visible borders */
+      .btn,
+      .btn-primary,
+      .btn-secondary,
+      .menu-toggle,
+      input,
+      textarea,
+      select,
+      .card {
+        border: 1px solid ButtonText !important;
+      }
+
+      /* Ensure focus indicators are always visible */
+      :focus,
+      :focus-visible {
+        outline: 2px solid Highlight !important;
+        outline-offset: 2px !important;
+      }
+
+      .skip-link:focus {
+        outline: 3px solid Highlight !important;
+      }
+    }
+
+    /* ================================================================
+       BASE STYLES - Legacy Fallbacks Included
+       ================================================================ */
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    
+    html {
+      scroll-behavior: auto;
+      -webkit-text-size-adjust: 100%;
+      -moz-text-size-adjust: 100%;
+      text-size-adjust: 100%;
+    }
+    
+    @media (prefers-reduced-motion: no-preference) {
+      html {
+        scroll-behavior: smooth;
+      }
+    }
+    
+    body {
+      background-color: #ffffff;
+      background-color: var(--color-bg);
+      color: #0f172a;
+      color: var(--color-text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      font-size: 1rem;
+      font-size: var(--font-size-base);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      text-rendering: optimizeLegibility;
+    }
+    
+    img,
+    svg,
+    video,
+    canvas,
+    picture {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+    
+    button,
+    input,
+    select,
+    textarea {
+      font-family: inherit;
+      font-size: inherit;
+      line-height: inherit;
+      color: inherit;
+    }
+    
+    /* ================================================================
+       LAYOUT PRIMITIVES - Legacy Fallbacks
+       ================================================================ */
+    .wrapper {
+      max-width: 72rem;
+      max-width: var(--max-width);
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: 1rem;
+      padding-right: 1rem;
+      padding-left: var(--space-md);
+      padding-right: var(--space-md);
+    }
+    
+    .flow > * + * {
+      margin-top: 1rem;
+      margin-top: var(--space-md);
+    }
+    
+    .flow-lg > * + * {
+      margin-top: 1.5rem;
+      margin-top: var(--space-lg);
+    }
+    
+    .section {
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+      padding-top: var(--space-xl);
+      padding-bottom: var(--space-xl);
+    }
+    
+    @media (min-width: 48rem) {
+      .section {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        padding-top: var(--space-2xl);
+        padding-bottom: var(--space-2xl);
+      }
+    }
+    
+    .card {
+      background-color: #f9fafb;
+      background-color: var(--color-surface);
+      border: 1px solid #e2e8f0;
+      border: 1px solid var(--color-border);
+      border-radius: 0.5rem;
+      border-radius: var(--radius);
+      padding: 1.5rem;
+      padding: var(--space-lg);
+    }
+    
+    /* ================================================================
+       TYPOGRAPHY
+       ================================================================ */
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      color: #0f172a;
+      color: var(--color-text);
+      font-weight: 600;
+      line-height: 1.2;
+      margin: 0;
+    }
+    
+    h1 {
+      font-size: 2rem;
+      font-size: var(--font-size-2xl);
+      letter-spacing: -0.025em;
+      max-inline-size: 28ch;
+      line-height: 1.15;
+    }
+    
+    h2 {
+      font-size: 1.5rem;
+      font-size: var(--font-size-xl);
+      letter-spacing: -0.015em;
+    }
+    
+    h3 {
+      font-size: 1.125rem;
+      font-size: var(--font-size-lg);
+      letter-spacing: -0.01em;
+    }
+    
+    p {
+      margin: 0;
+      color: #475569;
+      color: var(--color-text-muted);
+      max-width: 65ch;
+      max-width: var(--readable-width);
+    }
+    
+    strong {
+      color: #0f172a;
+      color: var(--color-text);
+      font-weight: 600;
+    }
+    
+    .text-strong {
+      color: #0f172a;
+      color: var(--color-text);
+    }
+    
+    /* ================================================================
+       SKIP LINK
+       ================================================================ */
+    .skip-link {
+      position: absolute;
+      top: 0.5rem;
+      left: 0.5rem;
+      top: var(--space-sm);
+      left: var(--space-sm);
+      background-color: #0f172a;
+      background-color: var(--color-accent);
+      color: #ffffff;
+      color: var(--color-accent-text);
+      padding: 0.5rem 1rem;
+      padding: var(--space-sm) var(--space-md);
+      text-decoration: none;
+      font-weight: 600;
+      border-radius: 0.5rem;
+      border-radius: var(--radius);
+      transform: translateY(-200%);
+      z-index: 1000;
+    }
+    
+    .skip-link:focus {
+      transform: translateY(0);
+      outline: 3px solid #2563eb;
+      outline: 3px solid var(--color-focus);
+      outline-offset: 3px;
+    }
+    
+    /* ================================================================
+       HEADER & NAVIGATION
+       ================================================================ */
+    .site-header {
+      border-bottom: 1px solid #e2e8f0;
+      border-bottom: 1px solid var(--color-border);
+      background-color: #ffffff;
+      background-color: var(--color-bg);
+      position: relative;
+    }
+    
+    .site-header-inner {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      padding-top: var(--space-md);
+      padding-bottom: var(--space-md);
+      gap: 1rem;
+      gap: var(--space-md);
+    }
+    
+    .brand {
+      font-size: 1.125rem;
+      font-size: var(--font-size-lg);
+      font-weight: 700;
+      color: #0f172a;
+      color: var(--color-text);
+      text-decoration: none;
+      padding: 0.5rem;
+      padding: var(--space-xs);
+      margin: -0.5rem;
+      margin: calc(var(--space-xs) * -1);
+      border-radius: 4px;
+    }
+    
+    .brand:focus {
+      outline: 2px solid #2563eb;
+      outline: 2px solid var(--color-focus);
+      outline-offset: 2px;
+    }
+    
+    /* Navigation - Legacy Fallback for Flexbox Gap */
+    .primary-nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      /* Legacy fallback - negative margin technique */
+      margin-left: -0.75rem;
+      margin-left: calc(var(--space-md) * -1);
+    }
+    
+    .primary-nav li {
+      /* Legacy fallback */
+      margin-left: 0.75rem;
+      margin-left: var(--space-md);
+    }
+    
+    /* Modern browsers with gap support */
+    @supports (gap: 1rem) {
+      .primary-nav ul {
+        gap: 1rem;
+        gap: var(--space-md);
+        margin-left: 0;
+      }
+      
+      .primary-nav li {
+        margin-left: 0;
+      }
+    }
+    
+    .primary-nav a {
+      color: #0f172a;
+      color: var(--color-text);
+      text-decoration: none;
+      font-weight: 500;
+      padding: 0.5rem 0.75rem;
+      padding: var(--space-xs) var(--space-sm);
+      border-radius: 4px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 44px;
+      min-height: var(--min-touch-target);
+      min-width: 44px;
+      min-width: var(--min-touch-target);
+    }
+    
+    .primary-nav a:hover {
+      background-color: #f9fafb;
+      background-color: var(--color-surface);
+    }
+    
+    .primary-nav a:focus {
+      outline: 2px solid #2563eb;
+      outline: 2px solid var(--color-focus);
+      outline-offset: 2px;
+    }
+    
+    /* Mobile Menu Toggle */
+    .menu-toggle {
+      display: none;
+      background: #0f172a;
+      background: var(--color-accent);
+      color: #ffffff;
+      color: var(--color-accent-text);
+      border: none;
+      border-radius: 0.5rem;
+      border-radius: var(--radius);
+      padding: 0.75rem 1rem;
+      padding: var(--space-sm) var(--space-md);
+      cursor: pointer;
+      font-weight: 600;
+      min-height: 44px;
+      min-height: var(--min-touch-target);
+      min-width: 44px;
+      min-width: var(--min-touch-target);
+    }
+    
+    .menu-toggle:hover {
+      opacity: 0.9;
+    }
+    
+    .menu-toggle:focus {
+      outline: 2px solid #2563eb;
+      outline: 2px solid var(--color-focus);
+      outline-offset: 2px;
+    }
+    
+    /* Only hide transforms on reduced motion users */
+    @media (prefers-reduced-motion: no-preference) {
+      .menu-toggle:active {
+        transform: scale(0.98);
+      }
+    }
+    
+    /* Mobile Navigation - Progressive Enhancement with JS-Off Fallback */
+    @media (max-width: 39.99rem) {
+      /* Default: nav visible without JS */
+      .primary-nav {
+        width: 100%;
+      }
+
+      .primary-nav ul {
+        flex-direction: column;
+        align-items: stretch;
+        margin-left: 0;
+      }
+
+      .primary-nav li {
+        margin-left: 0;
+      }
+
+      .primary-nav a {
+        width: 100%;
+      }
+
+      /* Hide toggle button by default (no JS) */
+      .menu-toggle {
+        display: none;
+      }
+
+      /* JS-enhanced: collapsible menu */
+      .js .primary-nav {
+        display: none;
+      }
+
+      .js .primary-nav.active {
+        display: block;
+      }
+
+      .js .menu-toggle {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+        gap: var(--space-xs);
+      }
+    }
+    
+    /* ================================================================
+       HERO SECTION
+       ================================================================ */
+    .hero {
+      display: grid;
+      gap: 2rem;
+      gap: var(--space-xl);
+    }
+
+    .hero figure img {
+      aspect-ratio: 4 / 3;
+      inline-size: 100%;
+      block-size: auto;
+    }
+    
+    @media (min-width: 48rem) {
+      .hero {
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        gap: 3rem;
+        gap: var(--space-2xl);
+      }
+    }
+    
+    .hero-badge {
+      display: inline-block;
+      font-size: 0.875rem;
+      font-size: var(--font-size-sm);
+      font-weight: 600;
+      color: #0f172a;
+      color: var(--color-accent);
+      background-color: #f9fafb;
+      background-color: var(--color-surface);
+      border: 1px solid #e2e8f0;
+      border: 1px solid var(--color-border);
+      padding: 0.5rem 0.75rem;
+      padding: var(--space-xs) var(--space-sm);
+      border-radius: 0.5rem;
+      border-radius: var(--radius);
+      margin-bottom: 0.75rem;
+      margin-bottom: var(--space-sm);
+    }
+    
+    /* ================================================================
+       BUTTONS
+       ================================================================ */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      gap: var(--space-xs);
+      padding: 0.75rem 1.5rem;
+      padding: var(--space-sm) var(--space-lg);
+      font-weight: 600;
+      text-decoration: none;
+      border-radius: 0.5rem;
+      border-radius: var(--radius);
+      border: 2px solid transparent;
+      cursor: pointer;
+      font-family: inherit;
+      font-size: inherit;
+      line-height: 1.2;
+      min-height: 44px;
+      min-height: var(--min-touch-target);
+      min-width: 44px;
+      min-width: var(--min-touch-target);
+    }
+    
+    .btn-primary {
+      background-color: #0f172a;
+      background-color: var(--color-accent);
+      color: #ffffff;
+      color: var(--color-accent-text);
+      border-color: #0f172a;
+      border-color: var(--color-accent);
+    }
+    
+    .btn-primary:hover {
+      opacity: 0.9;
+    }
+    
+    .btn-primary:focus {
+      outline: 3px solid #2563eb;
+      outline: 3px solid var(--color-focus);
+      outline-offset: 2px;
+    }
+    
+    @media (prefers-reduced-motion: no-preference) {
+      .btn-primary:active {
+        transform: scale(0.98);
+      }
+    }
+    
+    .btn-secondary {
+      background-color: #f9fafb;
+      background-color: var(--color-surface);
+      color: #0f172a;
+      color: var(--color-text);
+      border-color: #e2e8f0;
+      border-color: var(--color-border);
+    }
+    
+    .btn-secondary:hover {
+      background-color: #ffffff;
+      background-color: var(--color-bg);
+      border-color: #0f172a;
+      border-color: var(--color-accent);
+    }
+    
+    .btn-secondary:focus {
+      outline: 3px solid #2563eb;
+      outline: 3px solid var(--color-focus);
+      outline-offset: 2px;
+    }
+    
+    .btn-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      gap: var(--space-sm);
+      margin-top: 1.5rem;
+      margin-top: var(--space-lg);
+    }
+    
+    /* ================================================================
+       STATS GRID
+       ================================================================ */
+    .stats-grid {
+      display: grid;
+      gap: 1rem;
+      gap: var(--space-md);
+      margin-top: 1.5rem;
+      margin-top: var(--space-lg);
+      list-style: none;
+      padding: 0;
+      margin-left: 0;
+    }
+    
+    @media (min-width: 40rem) {
+      .stats-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      }
+    }
+    
+    .stat-value {
+      font-size: 1.5rem;
+      font-size: var(--font-size-xl);
+      font-weight: 700;
+      color: #0f172a;
+      color: var(--color-text);
+      line-height: 1.1;
+    }
+    
+    .stat-label {
+      font-size: 0.875rem;
+      font-size: var(--font-size-sm);
+      color: #475569;
+      color: var(--color-text-muted);
+      margin-top: 0.5rem;
+      margin-top: var(--space-xs);
+    }
+    
+    /* ================================================================
+       FORM STYLES
+       ================================================================ */
+    form {
+      max-width: 65ch;
+      max-width: var(--readable-width);
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+    .form-group {
+      margin-bottom: 1.5rem;
+      margin-bottom: var(--space-lg);
+    }
+    
+    label {
+      display: block;
+      font-weight: 600;
+      color: #0f172a;
+      color: var(--color-text);
+      margin-bottom: 0.5rem;
+      margin-bottom: var(--space-xs);
+    }
+    
+    .required-marker {
+      color: #dc2626;
+      color: var(--color-error);
+    }
+    
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    textarea {
+      width: 100%;
+      padding: 0.75rem;
+      padding: var(--space-sm);
+      border: 2px solid #e2e8f0;
+      border: 2px solid var(--color-border);
+      border-radius: 0.5rem;
+      border-radius: var(--radius);
+      font-family: inherit;
+      font-size: inherit;
+      background-color: #ffffff;
+      background-color: var(--color-bg);
+      color: #0f172a;
+      color: var(--color-text);
+    }
+    
+    input:focus,
+    textarea:focus {
+      outline: none;
+      border-color: #2563eb;
+      border-color: var(--color-focus);
+      box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+    }
+    
+    input[aria-invalid="true"],
+    textarea[aria-invalid="true"] {
+      border-color: #dc2626;
+      border-color: var(--color-error);
+    }
+    
+    textarea {
+      min-height: 120px;
+      resize: vertical;
+    }
+    
+    .form-hint {
+      font-size: 0.875rem;
+      font-size: var(--font-size-sm);
+      color: #475569;
+      color: var(--color-text-muted);
+      margin-top: 0.5rem;
+      margin-top: var(--space-xs);
+    }
+    
+    .form-error {
+      font-size: 0.875rem;
+      font-size: var(--font-size-sm);
+      color: #dc2626;
+      color: var(--color-error);
+      font-weight: 600;
+      margin-top: 0.5rem;
+      margin-top: var(--space-xs);
+    }
+    
+    /* ================================================================
+       FOOTER
+       ================================================================ */
+    .site-footer {
+      border-top: 1px solid #e2e8f0;
+      border-top: 1px solid var(--color-border);
+      background-color: #f9fafb;
+      background-color: var(--color-surface);
+    }
+    
+    .site-footer-inner {
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+      padding-top: var(--space-xl);
+      padding-bottom: var(--space-xl);
+    }
+    
+    .footer-grid {
+      display: grid;
+      gap: 2rem;
+      gap: var(--space-xl);
+    }
+    
+    @media (min-width: 40rem) {
+      .footer-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      }
+    }
+    
+    .footer-heading {
+      font-size: 1rem;
+      font-size: var(--font-size-base);
+      font-weight: 600;
+      color: #0f172a;
+      color: var(--color-text);
+      margin-bottom: 0.75rem;
+      margin-bottom: var(--space-sm);
+    }
+    
+    .footer-links {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    
+    .footer-links li {
+      margin-bottom: 0.5rem;
+      margin-bottom: var(--space-xs);
+    }
+    
+    .footer-links a {
+      color: #475569;
+      color: var(--color-text-muted);
+      text-decoration: none;
+      display: inline-block;
+      padding: 0.25rem;
+      padding: var(--space-2xs);
+      margin: -0.25rem;
+      margin: calc(var(--space-2xs) * -1);
+      border-radius: 4px;
+    }
+    
+    .footer-links a:hover {
+      color: #0f172a;
+      color: var(--color-text);
+      background-color: #ffffff;
+      background-color: var(--color-bg);
+    }
+    
+    .footer-links a:focus {
+      outline: 2px solid #2563eb;
+      outline: 2px solid var(--color-focus);
+      outline-offset: 2px;
+      color: #0f172a;
+      color: var(--color-text);
+    }
+    
+    .footer-bottom {
+      margin-top: 2rem;
+      padding-top: 1.5rem;
+      margin-top: var(--space-xl);
+      padding-top: var(--space-lg);
+      border-top: 1px solid #e2e8f0;
+      border-top: 1px solid var(--color-border);
+      text-align: center;
+      font-size: 0.875rem;
+      font-size: var(--font-size-sm);
+      color: #475569;
+      color: var(--color-text-muted);
+    }
+    
+    /* ================================================================
+       UTILITY CLASSES
+       ================================================================ */
+    .visually-hidden {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      clip-path: inset(50%);
+      white-space: nowrap;
+      border: 0;
+    }
+    
+    /* ================================================================
+       PRINT STYLES
+       ================================================================ */
+    @media print {
+      .site-header,
+      .site-footer,
+      .menu-toggle,
+      .btn,
+      .hero-badge {
+        display: none;
+      }
+      
+      body {
+        font-size: 12pt;
+        color: #000;
+        background: #fff;
+      }
+      
+      a {
+        text-decoration: underline;
+      }
+      
+      h1,
+      h2,
+      h3 {
+        page-break-after: avoid;
+      }
+    }
+  </style>
+  
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "ABC Translations",
+    "url": "https://abctranslations.com/",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://abctranslations.com/logo.png",
+      "width": 512,
+      "height": 512
+    },
+    "description": "Accessible, honest professional translation services with transparent pricing.",
+    "areaServed": ["US"],
+    "knowsAbout": [
+      "Certified translation and document preparation",
+      "Plain-language consulting for administrative processes"
+    ],
+    "disclaimer": "Timelines are typical, not guaranteed. We do not provide legal advice.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "US"
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "Customer Service",
+      "email": "info@abctranslations.com"
+    },
+    "sameAs": [
+      "https://www.linkedin.com/company/abc-translations",
+      "https://twitter.com/abctranslations"
+    ]
+  }
+  </script>
+  
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [{
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://abctranslations.com/"
+    }]
+  }
+  </script>
+  
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "ABC Translations",
+    "url": "https://abctranslations.com/",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://abctranslations.com/search?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Accessibility Statement",
+    "url": "https://abctranslations.com/accessibility.html",
+    "accessibilityStandard": [
+      "WCAG 2.2 Level AA",
+      "Reduced motion honored via prefers-reduced-motion",
+      "Full core flow usable without JavaScript"
+    ],
+    "accessibilityControl": [
+      "keyboard",
+      "voice",
+      "screenReader"
+    ],
+    "accessibilityAPI": [
+      "aria",
+      "HTML5"
+    ]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Professional Translation Services",
+    "provider": {
+      "@type": "Organization",
+      "name": "ABC Translations"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "500",
+      "bestRating": "5",
+      "worstRating": "1"
+    }
+  }
+  </script>
+</head>
+<body>
+  <!-- JavaScript Detection -->
+  <script>document.documentElement.className += ' js';</script>
+  
+  <!-- Skip Navigation -->
+  <a href="#main" class="skip-link">Skip to main content</a>
+  
+  <!-- Header -->
+  <header class="site-header">
+    <div class="wrapper site-header-inner">
+      <!-- Brand - Text logo for now. When adding an image logo, use:
+           <a href="/" class="brand" aria-label="ABC Translations homepage">
+             <img src="/logo.svg" width="128" height="32" alt="ABC Translations"
+                  fetchpriority="high" decoding="async">
+           </a>
+           fetchpriority="high" improves LCP on low-end devices -->
+      <a href="/" class="brand">
+        ABC Translations
+      </a>
+      
+      <button 
+        class="menu-toggle" 
+        aria-expanded="false" 
+        aria-controls="primary-nav"
+        aria-label="Toggle navigation menu">
+        <span class="menu-toggle-label">Menu</span>
+      </button>
+      
+      <nav id="primary-nav" class="primary-nav" aria-label="Primary navigation">
+        <ul>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#trust">Why Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+  <!-- Main Content -->
+  <main id="main">
+    <!-- Hero -->
+    <section class="section wrapper hero" aria-labelledby="hero-title">
+      <div class="flow">
+        <span class="hero-badge">Accessible by Design</span>
+        
+        <h1 id="hero-title">
+          Professional Translation Services Built for Real People
+        </h1>
+
+        <p>
+          We design every interaction for someone on an old phone with a slow connection.
+          That discipline makes our translations faster, clearer, and more accurate for everyone.
+        </p>
+        
+        <div class="btn-group" role="group" aria-label="Primary actions">
+          <a href="#services" class="btn btn-primary">See Services</a>
+          <a href="#trust" class="btn btn-secondary">Why Us</a>
+        </div>
+        
+        <p style="font-size: 0.875rem; color: #475569;">
+          No hidden fees. No jargon. Plain language pricing before you commit.
+        </p>
+      </div>
+      
+      <figure class="card" style="text-align: center;">
+        <img 
+          src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300' role='img'%3E%3Crect width='400' height='300' fill='%23f1f5f9'/%3E%3Ctext x='50%25' y='40%25' dominant-baseline='middle' text-anchor='middle' font-family='system-ui' font-size='18' fill='%23475569' font-weight='600'%3EAccessible Design%3C/text%3E%3Ctext x='50%25' y='60%25' dominant-baseline='middle' text-anchor='middle' font-family='system-ui' font-size='14' fill='%23475569'%3EWorks on any device%3C/text%3E%3C/svg%3E" 
+          alt="Illustration showing accessible design that works on any device, including older phones"
+          width="400" 
+          height="300"
+          loading="lazy">
+        <figcaption style="font-size: 0.875rem; color: #475569; margin-top: 0.75rem;">
+          Built for low bandwidth and small screens first.
+        </figcaption>
+      </figure>
+    </section>
+    
+    <!-- Trust Signals -->
+    <section class="section wrapper" id="trust" aria-labelledby="trust-heading">
+      <div class="flow" style="max-width: 65ch;">
+        <h2 id="trust-heading">
+          You Should Know Who You're Dealing With
+        </h2>
+        <p>
+          Trust is earned with transparency, not hype. Here are concrete numbers:
+        </p>
+      </div>
+      
+      <ul class="stats-grid" aria-label="Trust statistics">
+        <li class="card">
+          <div class="stat-value">4.9/5</div>
+          <div class="stat-label">Average client rating over 500+ reviews</div>
+        </li>
+
+        <li class="card">
+          <div class="stat-value">24h</div>
+          <div class="stat-label">Typical turnaround for standard requests</div>
+        </li>
+
+        <li class="card">
+          <div class="stat-value">100%</div>
+          <div class="stat-label">Written quotes provided before payment</div>
+        </li>
+      </ul>
+    </section>
+    
+    <!-- Services -->
+    <section class="section wrapper" id="services" aria-labelledby="services-heading">
+      <div class="flow" style="max-width: 65ch;">
+        <h2 id="services-heading">What We Do (In Plain English)</h2>
+        <p>
+          We deliver precise, human-reviewed work. No upsell pressure. No "limited time offers."
+          Just: what you need, when you need it, what it costs.
+        </p>
+      </div>
+      
+      <div class="flow-lg" style="margin-top: 2rem;">
+        <article class="card flow" aria-labelledby="service1-title">
+          <h3 id="service1-title">Certified Translation</h3>
+          <p>
+            Official document translations prepared, reviewed, and delivered with certification
+            for submission to agencies, courts, or institutions.
+          </p>
+          <p class="text-strong"><strong>Typical delivery: 24 hours</strong></p>
+        </article>
+
+        <article class="card flow" aria-labelledby="service2-title">
+          <h3 id="service2-title">Translation Consulting</h3>
+          <p>
+            Direct access to translation specialists who communicate in plain language.
+            We explain what you need, accuracy requirements, and timeline expectations.
+          </p>
+          <p class="text-strong"><strong>Clear scope, flat rate</strong></p>
+        </article>
+      </div>
+    </section>
+  </main>
+  
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="wrapper site-footer-inner">
+      <div class="footer-grid">
+        <section aria-labelledby="footer-about">
+          <h2 id="footer-about" class="footer-heading">About</h2>
+          <p style="color: #475569; font-size: 0.875rem;">
+            We believe every person deserves clear information, fair pricing, and
+            respectful treatment — regardless of device, language, or bandwidth.
+          </p>
+        </section>
+        
+        <nav aria-labelledby="footer-links">
+          <h2 id="footer-links" class="footer-heading">Links</h2>
+          <ul class="footer-links">
+            <li><a href="#services">Services</a></li>
+            <li><a href="#trust">Why Us</a></li>
+            <li><a href="/privacy.html" rel="privacy-policy">Privacy Policy</a></li>
+            <li><a href="/accessibility.html">Accessibility Statement</a></li>
+            <li><a href="/terms.html" rel="terms-of-service">Terms of Service</a></li>
+          </ul>
+        </nav>
+        
+        <section aria-labelledby="footer-standards">
+          <h2 id="footer-standards" class="footer-heading">Standards</h2>
+          <p style="color: #475569; font-size: 0.875rem;">
+            We design for WCAG 2.2 Level AA, honor reduced motion preferences,
+            and ensure full functionality without JavaScript. Our terms use plain language.
+          </p>
+        </section>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; <span id="year">2025</span> ABC Translations All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+  
+  <!-- Progressive Enhancement JavaScript -->
+  <script>
+    (function() {
+      'use strict';
+      
+      // Defer enhancement until after first paint
+      if (window.requestAnimationFrame) {
+        requestAnimationFrame(function() {
+          initEnhancements();
+        });
+      } else {
+        initEnhancements();
+      }
+      
+      function initEnhancements() {
+        // Mobile Menu Toggle
+        var toggle = document.querySelector('.menu-toggle');
+        var toggleLabel = document.querySelector('.menu-toggle-label');
+        var nav = document.querySelector('.primary-nav');
+        
+        if (toggle && nav && toggleLabel) {
+          toggle.addEventListener('click', function() {
+            var isExpanded = this.getAttribute('aria-expanded') === 'true';
+            this.setAttribute('aria-expanded', !isExpanded);
+            nav.classList.toggle('active');
+            toggleLabel.textContent = isExpanded ? 'Menu' : 'Close Menu';
+          });
+        }
+        
+        // Update Copyright Year
+        var yearSpan = document.getElementById('year');
+        if (yearSpan) {
+          yearSpan.textContent = new Date().getFullYear();
+        }
+      }
+    })();
+  </script>
+</body>
+</html>
