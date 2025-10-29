@@ -23,6 +23,10 @@
   <meta name="description" content="Accessible, honest translation services with transparent pricing. Designed for WCAG 2.2 AA. Works on any device, no hidden fees.">
   <link rel="canonical" href="https://abctranslations.com/">
 
+  <!-- Language & Regional Targeting -->
+  <link rel="alternate" href="https://abctranslations.com/" hreflang="en" />
+  <link rel="alternate" href="https://abctranslations.com/" hreflang="x-default" />
+
   <!-- Search Engine Directives -->
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
   
@@ -902,6 +906,36 @@
       white-space: nowrap;
       border: 0;
     }
+
+    .text-center {
+      text-align: center;
+    }
+
+    .text-sm-muted {
+      font-size: 0.875rem;
+      font-size: var(--font-size-sm);
+      color: #475569;
+      color: var(--color-text-muted);
+    }
+
+    .text-caption {
+      font-size: 0.875rem;
+      font-size: var(--font-size-sm);
+      color: #475569;
+      color: var(--color-text-muted);
+      margin-top: 0.75rem;
+      margin-top: var(--space-sm);
+    }
+
+    .max-w-readable {
+      max-width: 65ch;
+      max-width: var(--readable-width);
+    }
+
+    .mt-2xl {
+      margin-top: 2rem;
+      margin-top: var(--space-xl);
+    }
     
     /* ================================================================
        PRINT STYLES
@@ -1096,19 +1130,20 @@
           <a href="#trust" class="btn btn-secondary">Why Us</a>
         </div>
         
-        <p style="font-size: 0.875rem; color: #475569;">
+        <p class="text-sm-muted">
           No hidden fees. No jargon. Plain language pricing before you commit.
         </p>
       </div>
       
-      <figure class="card" style="text-align: center;">
-        <img 
-          src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300' role='img'%3E%3Crect width='400' height='300' fill='%23f1f5f9'/%3E%3Ctext x='50%25' y='40%25' dominant-baseline='middle' text-anchor='middle' font-family='system-ui' font-size='18' fill='%23475569' font-weight='600'%3EAccessible Design%3C/text%3E%3Ctext x='50%25' y='60%25' dominant-baseline='middle' text-anchor='middle' font-family='system-ui' font-size='14' fill='%23475569'%3EWorks on any device%3C/text%3E%3C/svg%3E" 
+      <figure class="card text-center">
+        <img
+          src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300' role='img'%3E%3Crect width='400' height='300' fill='%23f1f5f9'/%3E%3Ctext x='50%25' y='40%25' dominant-baseline='middle' text-anchor='middle' font-family='system-ui' font-size='18' fill='%23475569' font-weight='600'%3EAccessible Design%3C/text%3E%3Ctext x='50%25' y='60%25' dominant-baseline='middle' text-anchor='middle' font-family='system-ui' font-size='14' fill='%23475569'%3EWorks on any device%3C/text%3E%3C/svg%3E"
           alt="Illustration showing accessible design that works on any device, including older phones"
-          width="400" 
+          width="400"
           height="300"
-          loading="lazy">
-        <figcaption style="font-size: 0.875rem; color: #475569; margin-top: 0.75rem;">
+          loading="eager"
+          fetchpriority="high">
+        <figcaption class="text-caption">
           Built for low bandwidth and small screens first.
         </figcaption>
       </figure>
@@ -1116,7 +1151,7 @@
     
     <!-- Trust Signals -->
     <section class="section wrapper" id="trust" aria-labelledby="trust-heading">
-      <div class="flow" style="max-width: 65ch;">
+      <div class="flow max-w-readable">
         <h2 id="trust-heading">
           You Should Know Who You're Dealing With
         </h2>
@@ -1145,15 +1180,15 @@
     
     <!-- Services -->
     <section class="section wrapper" id="services" aria-labelledby="services-heading">
-      <div class="flow" style="max-width: 65ch;">
+      <div class="flow max-w-readable">
         <h2 id="services-heading">What We Do (In Plain English)</h2>
         <p>
           We deliver precise, human-reviewed work. No upsell pressure. No "limited time offers."
           Just: what you need, when you need it, what it costs.
         </p>
       </div>
-      
-      <div class="flow-lg" style="margin-top: 2rem;">
+
+      <div class="flow-lg mt-2xl">
         <article class="card flow" aria-labelledby="service1-title">
           <h3 id="service1-title">Certified Translation</h3>
           <p>
@@ -1181,7 +1216,7 @@
       <div class="footer-grid">
         <section aria-labelledby="footer-about">
           <h2 id="footer-about" class="footer-heading">About</h2>
-          <p style="color: #475569; font-size: 0.875rem;">
+          <p class="text-sm-muted">
             We believe every person deserves clear information, fair pricing, and
             respectful treatment — regardless of device, language, or bandwidth.
           </p>
@@ -1200,7 +1235,7 @@
         
         <section aria-labelledby="footer-standards">
           <h2 id="footer-standards" class="footer-heading">Standards</h2>
-          <p style="color: #475569; font-size: 0.875rem;">
+          <p class="text-sm-muted">
             We design for WCAG 2.2 Level AA, honor reduced motion preferences,
             and ensure full functionality without JavaScript. Our terms use plain language.
           </p>

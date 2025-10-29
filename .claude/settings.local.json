@@ -4,7 +4,12 @@
       "Bash(dir:*)",
       "Bash(git init:*)",
       "Bash(git config:*)",
-      "Bash(git add:*)"
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$(cat <<''EOF''\nInitial commit: 2026-compliant HTML boilerplate for ABC Translations\n\nFeatures:\n- WCAG 2.2 Level AA accessible\n- Windows High Contrast Mode support\n- JS-disabled navigation fallback\n- Privacy headers (CSP, Permissions-Policy)\n- Content provenance metadata\n- Structured data (JSON-LD) for SEO/AI\n- Trust signals (AggregateRating)\n- System fonts only (no external deps)\n- 15KB total size\n- LCP < 2.5s on 3G\n\nDocumentation:\n- Root README.md with quick start\n- docs/templates/README.md with usage guide\n- docs/templates/refactor-plan.md with technical details\n- docs/templates/boilerplate-2026.html production template\n\n🤖 Generated with Claude Code\nhttps://claude.com/claude-code\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")",
+      "Bash(git remote add:*)",
+      "Bash(git branch:*)",
+      "Bash(git push:*)",
+      "Bash(git commit:*)"
     ],
     "deny": [],
     "ask": []
